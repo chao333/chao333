@@ -1,0 +1,28 @@
+<html>
+<body>
+
+<h1>输入数字N,N范围1-9</h1>
+
+
+
+<input id="form" type="text">
+
+
+<script>
+function myFunction(){
+var x=document.getElementById("form").value;
+document.write('<table border="1">');
+ for(var i=1;i<=x;i++){
+ document.write('<tr>');
+  for(var j=1;j<=x;j++){
+  document.write('<td>'+i+'x'+j+'='+(i*j)+'</td>');
+  }
+ document.write('</tr>');
+ }
+ document.write('</table>');}
+</script>
+
+<button type="button" onclick="myFunction()">点击生成表格</button>
+
+</body>
+</html>
